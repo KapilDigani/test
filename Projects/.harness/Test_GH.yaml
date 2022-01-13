@@ -1,0 +1,19 @@
+connector:
+  name: Test GH
+  identifier: Test_GH
+  description:
+  orgIdentifier: default
+  projectIdentifier: GitX_KD
+  type: Github
+  spec:
+    url: https://github.com/KapilDigani
+    validationRepo: test
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: KapilDigani
+          tokenRef: account.KD_GitHub_PAT
+    executeOnDelegate: false
+    type: Account
