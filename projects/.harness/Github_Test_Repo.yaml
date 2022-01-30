@@ -1,0 +1,23 @@
+connector:
+  name: Github Test Repo
+  identifier: Github_Test_Repo
+  description:
+  orgIdentifier: default
+  projectIdentifier: GitX_QS
+  type: Github
+  spec:
+    url: https://github.com/KapilDigani
+    validationRepo: test
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: KapilDigani
+          tokenRef: account.KD_GitHub_Pwd
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: account.KD_GitHub_PAT
+    executeOnDelegate: false
+    type: Account
